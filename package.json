@@ -4,7 +4,8 @@
   "description": "��#\u0000 \u0000P\u0000-\u0000T\u0000a\u0000i\u0000l\u0000w\u0000i\u0000n\u0000d\u0000-\u00002\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwind -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
