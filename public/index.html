@@ -18,9 +18,49 @@
     <div id="tab-bar"></div>
     <section class="w-full h-screen">
       <div id="home">
-        <div class="w-full h-3/4"></div>
+        <div class="w-full h-3/4">
+          <div
+            class="w-full flex flex-col absolute space-y-96 py-4 items-center"
+          >
+            <input
+              class="outline-black outline-1 rounded-full py-1 px-2"
+              placeholder="San Francisco"
+              type="search"
+            />
+            <button
+              class="bg-white font-semibold py-1 px-2 w-24 rounded-full text-primary"
+            >
+              Explore
+            </button>
+          </div>
+          <div class="w-full h-full">
+            <img src="./img/sanFrancisco.jpg" alt="background image" />
+          </div>
+        </div>
       </div>
-      <div id="recomended"></div>
+      <div
+        id="recomended"
+        class="flex flex-col justify-center h-screen items-center"
+      >
+        <div class="w-48 h-64 shadow-md rounded-lg" id="card">
+          <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+          <div class="bg-secondary w-full h-2/5 rounded-b-lg p-2">
+            <p class="text-white font-bold text-center">Norway</p>
+            <p class="text-white text-sm">
+              Beautiful Landscapes with fresh air to rest from work.
+            </p>
+          </div>
+        </div>
+        <div class="w-48 h-64 shadow-md rounded-lg my-10" id="card">
+          <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
+          <div class="bg-tertiary w-full h-2/5 rounded-b-lg p-2">
+            <p class="text-white font-bold text-center">Miami</p>
+            <p class="text-white text-sm">
+              Beautiful Landscapes with fresh air to rest from work.
+            </p>
+          </div>
+        </div>
+      </div>
       <div id="rentas-destacadas"></div>
     </section>
     <footer></footer>
