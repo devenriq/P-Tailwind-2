@@ -3,12 +3,8 @@
 const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./public/**/*.{html,js}", "./public/index.html"],
+  darkMode: "class",
   theme: {
-    // colors: {
-    //   primary: "#CC2D4A",
-    //   secondary: "#8FA206",
-    //   tertiary: "#61AEC9",
-    // },
     extend: {
       backgroundImage: {
         sanFrancisco: "url('../public/img/sanFrancisco.jpg')",
