@@ -23,7 +23,6 @@ module.exports = {
         switzerland: "url('../public/img/switzerland.jpg')",
         bali: "url('../public/img/bali.jpg')",
         chicago: "url('../public/img/chicago.jpg')",
-        europe: "url('../public/img/europe.jpg')",
         iceland: "url('../public/img/iceland.jpg')",
       },
       backgroundColor: (theme) => ({
@@ -43,5 +42,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

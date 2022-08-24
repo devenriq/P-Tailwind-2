@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .Card{
-  @apply w-48 h-64 shadow-md rounded-lg my-10
+  @apply w-48 h-64 shadow-md rounded-lg my-10 flex-none
 }
