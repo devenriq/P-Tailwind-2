@@ -14,20 +14,82 @@
     <title>Travel</title>
   </head>
   <body class="font-Montserrat">
-    <nav></nav>
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between">
+      <div class="h-auto w-auto">
+        <p class="text-xl text-primary font-black">Tourism World</p>
+      </div>
+      <div class="flex space-x-8">
+        <a class="font-bold text-md text-primary" href="#home">Home</a>
+        <a class="font-bold text-md text-primary" href="#recomended"
+          >Recommended</a
+        >
+        <a class="font-bold text-md text-primary" href="#rentas-destacadas"
+          >Rented</a
+        >
+        <a class="font-bold text-md text-primary" href="#faqs">FAQs</a>
+        <a class="font-bold text-md text-primary" href="#about">About</a>
+      </div>
+      <div class="flex space-x-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            class="fill-current text-primary"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            class="fill-current text-primary"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            class="fill-current text-primary"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+      </div>
+    </nav>
     <div id="tab-bar"></div>
     <section class="w-full h-screen">
-      <div id="home">
-        <div class="w-full h-3/4">
+      <div id="home" class="w-full h-3/4">
+        <div class="w-full h-full">
           <div
-            class="w-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-10 lg:justify-self-start"
+            class="w-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-44 lg:justify-self-start"
           >
             <input
               class="outline-black outline-1 rounded-full py-1 px-2 transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:scale-x-105 lg:hidden"
               placeholder="San Francisco"
               type="search"
             />
-            <div class="hidden h-auto lg:w-2/5 lg:flex lg:pb-6">
+            <div class="hidden h-auto lg:w-2/5 lg:flex lg:pb-4">
               <p class="text-4xl ml-16 font-bold text-black">
                 Find more locations like this one.
               </p>
@@ -39,7 +101,7 @@
             </button>
           </div>
           <div
-            class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+            class="w-full h-full lg:h-full lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
           >
             <img
               class="lg:hidden"
@@ -167,7 +229,7 @@
           </div>
         </div>
       </div>
-      <footer class="w-full h-auto bg-gray-100 p-6 space-y-2">
+      <footer id="about" class="w-full h-auto bg-gray-100 p-6 space-y-2">
         <p class="text-lg">About</p>
         <p class="text-sm text-gray-300">Investments</p>
         <p class="text-sm text-gray-300">Jobs</p>
