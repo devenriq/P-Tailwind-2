@@ -13,7 +13,7 @@
     />
     <title>Travel</title>
   </head>
-  <body>
+  <body class="font-Montserrat">
     <nav></nav>
     <div id="tab-bar"></div>
     <section class="w-full h-screen">
@@ -23,12 +23,12 @@
             class="w-full flex flex-col absolute space-y-96 py-4 items-center"
           >
             <input
-              class="outline-black outline-1 rounded-full py-1 px-2"
+              class="outline-black outline-1 rounded-full py-1 px-2 transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:scale-x-105"
               placeholder="San Francisco"
               type="search"
             />
             <button
-              class="bg-white font-semibold py-1 px-2 w-24 rounded-full text-primary"
+              class="bg-white font-semibold py-1 px-2 w-24 rounded-full text-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
             >
               Explore
             </button>
@@ -41,7 +41,7 @@
       <div id="recomended" class="p-6">
         <p class="text-3xl font-semibold text-primary">Recommended</p>
         <div
-          class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 scrollbar-hide"
+          class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 scrollbar-hide overflow-y-hidden"
         >
           <div class="Card" id="card">
             <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
