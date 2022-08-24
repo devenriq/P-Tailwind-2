@@ -20,21 +20,32 @@
       <div id="home">
         <div class="w-full h-3/4">
           <div
-            class="w-full flex flex-col absolute space-y-96 py-4 items-center"
+            class="w-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-10 lg:justify-self-start"
           >
             <input
-              class="outline-black outline-1 rounded-full py-1 px-2 transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:scale-x-105"
+              class="outline-black outline-1 rounded-full py-1 px-2 transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:scale-x-105 lg:hidden"
               placeholder="San Francisco"
               type="search"
             />
+            <div class="hidden h-auto lg:w-2/5 lg:flex lg:pb-6">
+              <p class="text-4xl ml-16 font-bold text-black">
+                Find more locations like this one.
+              </p>
+            </div>
             <button
-              class="bg-white font-semibold py-1 px-2 w-24 rounded-full text-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
+              class="bg-white font-semibold py-1 px-2 w-24 rounded-full text-primary transition duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16"
             >
               Explore
             </button>
           </div>
-          <div class="w-full h-full">
-            <img src="./img/sanFrancisco.jpg" alt="background image" />
+          <div
+            class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+          >
+            <img
+              class="lg:hidden"
+              src="./img/sanFrancisco.jpg"
+              alt="background image"
+            />
           </div>
         </div>
       </div>
@@ -155,7 +166,7 @@
       </footer>
     </section>
     <div
-      class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center"
+      class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden"
       id="tab-bar"
     >
       <a href="#home">
